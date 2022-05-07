@@ -4,6 +4,7 @@ var mongoconfig = require("./config/mongodb-config");
 var product = require("./routers/product"); // Imports routes for the products
 var enquiry= require('./routers/enquiries');
 var feedback=require('./routers/feedback');
+var upcoming= require('./routers/upcoming');
 var port = process.env.PORT || 5000;
  
 var app = express();
@@ -44,6 +45,7 @@ router.get("/", function(req, res) {
 router.use("/product", product); // /api/produce
 router.use("/enquiry",enquiry);
 router.use("/feedback",feedback);
+router.use("/upcoming",upcoming);
 // Register the 'root' router
 app.use("/api", router);
 app.listen(port, () => {

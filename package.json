@@ -10,14 +10,16 @@
     "mongodb": "^4.3.1",
     "mongoose": "^6.2.1",
     "multer": "^1.4.4",
-    "node-restful": "^0.2.6",
+    "node-restful": "^0.1.17",
     "uniqid": "^5.4.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
